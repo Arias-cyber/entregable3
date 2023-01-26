@@ -1,0 +1,101 @@
+[
+	{
+		"title": "Xbox",
+		"description": "Microsoft",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 3,
+		"stock": 7,
+		"id": 1
+	},
+	{
+		"title": "Ps2",
+		"description": "Sony",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 3283,
+		"stock": 7,
+		"id": 4
+	},
+	{
+		"title": "Ps4",
+		"description": "Sony",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 32883,
+		"stock": 7,
+		"id": 5
+	},
+	{
+		"title": "TvLed",
+		"description": "LG",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 3963,
+		"stock": 7,
+		"id": 6
+	},
+	{
+		"title": "MP3",
+		"description": "Sanyo",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 96,
+		"stock": 7,
+		"id": 7
+	},
+	{
+		"title": "Telefono",
+		"description": "LG",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 3963,
+		"stock": 7,
+		"id": 9
+	},
+	{
+		"title": "celular",
+		"description": "Sanyo",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 96,
+		"stock": 7,
+		"id": 10
+	},
+	{
+		"title": "Notebook",
+		"description": "LG",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 3963,
+		"stock": 7,
+		"id": 11
+	},
+	{
+		"title": "PC",
+		"description": "Sanyo",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 96,
+		"stock": 7,
+		"id": 12
+	},
+	{
+		"title": "procesador",
+		"description": "LG",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 3963,
+		"stock": 7,
+		"id": 13
+	},
+	{
+		"title": "placa de video",
+		"description": "Sanyo",
+		"price": 120000,
+		"thumbnail": "ruta",
+		"code": 96,
+		"stock": 7,
+		"id": 14
+	}
+]
