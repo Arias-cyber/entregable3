@@ -1,57 +1,43 @@
-import express, { response } from 'express'
-//import fs from 'fs'
+import express  from 'express'
 import ProductManager from "./ProductManager.js";
 
 
 const app = express()
 const PORT = 8080
 
-
+app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 
 const productManager = new ProductManager('./files/Products1.json') 
-const Productos = await productManager.getProducts();
+
 
 app.get('/products',  async (req, res) => {
-
-//    console.log(Productos)
-    res.send(Productos)
+    const products = await productManager.getProducts();
+    res.send(products)
 }) 
 
 
 app.get('/products/query',  async (req, res) => {
-
+    const products = await productManager.getProducts();
     const {limit} = req.query
     if (!limit || limit ===0 ){
-        //console.log(Productos)
-       return  res.send(Productos)
+       return  res.send(products)
     }
     
-    let limitProducts = Productos.slice(0,limit)
-
-    console.log(limitProducts)
+    let limitProducts = products.slice(0,limit)
     res.send(limitProducts)
-
 }) 
 
 
 app.get('/products/:pid', async (req, res) => {
-
     const {pid} = req.params
-    console.log(pid)
     let id = parseInt(pid);
-    const productDb= Productos.find(product => product.id === id)
-    if(!productDb) {
-        return res.send('No existe el producto')
-    }
-        
-    res.send(productDb)
-
+    const product = await productManager.getProductById(id)      
+    res.send(product)
 })
 
 
 app.listen(PORT,err =>{
     if (err)  console.log(err)
-    console.log(`Escuchando en el puerto ${PORT}`)
 })

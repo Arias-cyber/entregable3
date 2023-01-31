@@ -50,7 +50,7 @@ class ProductManager{
 
             return `Not found`;
         } 
-        return `Resultado encontrado: ` + JSON.stringify(productDb) 
+        return productDb
 
     }
 
